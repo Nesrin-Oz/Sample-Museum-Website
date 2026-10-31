@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: #F5F1EC;
+    color: #4A3628;
+}
+
+.menu {
+    width: 100%;
+    height: 60px;
+    background-color: #4A3628;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sagMenu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuItem {
+    position: relative;
+    width: 150px;
+    text-align: center;
+}
+
+.menuItem a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #F5F1EC;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menuItem .altCizgi {
+    width: 0;
+    height: 3px;
+    background-color: #F5F1EC;
+    margin: 0 auto;
+    transition: width 0.4s ease;
+}
+
+.menuItem:hover .altCizgi {
+    width: 120px;
+}
+
+
+.menuItem:hover  a {
+    color: #C9A24D;
+}
+
+.altMenu {
+    position: absolute;
+    top: 100%;
+    left: -25PX;
+    width: 200px;
+    background-color: #694D3A;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    display: none;
+	z-index: 51;
+}
+
+.altMenu li a {
+    display: block;
+    color: #F5F1EC;
+    text-decoration: none;
+}
+
+.altMenu li a:hover {
+    background-color: #C9A24D;
+    color: #4A3628;
+}
+
+.menuItem:hover .altMenu,
+.menuItem .altMenu:hover {
+    display: block;
+}
+

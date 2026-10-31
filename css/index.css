@@ -1,0 +1,382 @@
+body{
+	background-image: url("../resimler/giris.jpg");
+  	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.ortaKisim{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.ustMetin{
+	width: 100%;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+  	background-image: url("../resimler/giris.jpg");
+  	background-size: cover;
+  	background-position: center;
+}
+
+.golge{
+	position: absolute;
+  	inset: 0;
+  	background: rgba(0,0,0,0.55);
+}
+
+.ustMetin h1{
+	color: #C7885F;
+	z-index: 3;
+}
+
+.ustMetin span{
+	color:#E9C9B4;
+	font-size: 18px;
+	z-index: 3;
+}
+
+.ustTanitim{
+	width: 100%;
+    background-color: #F5F1EC;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ustTanitim .cerceveI{
+	width: 30%;
+	height: 250px;
+	margin: 50px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 4px;
+  	box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+	overflow: hidden;
+}
+
+.ustTanitim img{
+	width: 100%;
+	height: 100%;
+  	object-fit: cover;/*Resim kare değilse bile köşeleri kırparak kare yapar*/ 
+	transition: transform 0.4s ease;
+}
+
+
+.ustTanitim p{
+	width: 55%;
+	font-size: 17px;
+	text-align: justify;
+}
+
+.ustTanitim a{
+	text-decoration: none;
+    color: #4A3628;
+    border-bottom: 2px solid #C9A24D;
+	transition: color 0.4s ease;
+}
+
+.ustTanitim a:hover{
+    color: #C9A24D;
+}
+
+.onemliEserler{
+	width: 100%;
+    background-color: #F5F1EC;
+}
+
+.eserler{
+	padding-right: 8%;
+	padding-left: 8%;
+	padding-bottom: 50px;
+	
+}
+
+.eserBaslik{
+	margin-bottom: 30px;
+}
+
+.eserSatir{
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.eserKart{
+	background: #FFFFFF;
+    border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease,
+				background-color 0.4s ease;
+}
+.eserKart a{
+	text-decoration: none;
+}
+
+.eserKart:hover{
+	transform: translateY(-6px);
+	background-color: #F5F1EC;
+}
+
+.eserKart:hover img{
+	transform: scale(1.05);
+}
+
+.eserUst{
+	width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.eserUst img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*taşmaları gizler*/
+	transition: transform 0.4s ease;
+}
+
+.eserAlt{
+	padding: 20px;
+}
+
+.eserAlt h3{
+	color: #4A3628;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.eserAlt p{
+	color: #4A3628;
+}
+
+.eserAlt span{
+    color:#8C6A3F;
+}
+
+
+
+.ortaBosluk{
+	width: 100%;
+	height: 200px;
+}
+
+.altZiyaret{
+	width: 100%;
+    background-color: #F5F1EC;
+}
+
+.ziyaret{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.ziyaretListe {
+    padding: 80px 15%;
+    background-color: #F5F1EC;
+    color: #4A3628;
+}
+
+.ziyaretListe h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.ziyaretBilgiler {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ziyaretBilgiler li {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(74, 54, 40, 0.2);
+}
+
+
+.ziyaretBilgiler p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.ziyaretListe a {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #4A3628;
+    border-bottom: 2px solid #C9A24D;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+.ziyaretListe a:hover {
+    color: #C9A24D;
+}
+
+
+.altKisim{
+	width: 100%;
+    background-color: #F5F1EC;
+	padding-bottom: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.kartlarE{
+	width: 95%;
+	margin: 60px auto;
+	border: 2px solid #D6C7B8;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+	background-color: #F8F5F2;
+	border-radius: 14px;
+	display: flex;
+	flex-direction: column;
+	align-items:self-start;
+}
+
+.kartlarE h2 a{
+	text-decoration: none;
+	color:#4A3628;
+	margin-left: 90px;
+	font-size: 35px;
+	transition: color 0.3s ease;
+}
+
+.kartlarE h2 a:hover{
+	color:#C9A24D;
+}
+
+.esatir{
+	width: 90%;
+	margin: 0 auto;
+	display:flex;
+	text-align: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.etk{
+	width: 25%;
+	height: 300px;
+	background-color: #FFFFFF;
+	border: 1px solid #E0D6CC;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+	display: inline-block;
+	transition: 0.3s ease;
+	position: relative;
+	margin-left: 20px;
+}
+
+.etiket{
+	width: 80px;
+	position: absolute;
+	top: 20px;
+	left: 5px;
+	background-color: #8C6A3F;
+	color: #FFFFFF;
+	border-radius: 5px;
+	transition: background-color 0.3s ease,
+				color 0.3s ease;
+}
+
+.cerceveE{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.cerceveE img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;  
+	transition: transform 0.4s ease;
+}
+
+.icerik{
+	width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content:center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+
+.metinSol{
+	width: auto;
+	margin-left: 20px;
+	color: #4F5B5C;
+	transition: color 0.3s ease;
+}
+
+.yuvarlak{
+	width: 66px;
+	height: 66px;
+    border-radius: 50%;
+	background-color: #6B4F3A;
+	color: #FFFFFF;
+	margin-right: 10px;
+	margin-left: auto;
+	transition: background-color 0.3s ease, 
+				color 0.3s ease;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	flex-shrink: 0;/*bu class'ı şıkıştırma*/
+}
+
+.yuvarlak .gun{
+	font-size: 16px;
+	line-height: 1;
+}
+
+.yuvarlak .ay{
+	font-size: 15px;
+	line-height: 1;
+}
+
+.etk:hover{
+	background-color: #F5F1EC;
+}
+
+.etk:hover .yuvarlak{
+	background-color: #C9A24D;
+	color: #4A3628;
+}
+
+.etk:hover .metinSol{
+	color: #4A3628;
+}
+
+.etk:hover .etiket{
+	background-color: #C9A24D;
+	color: #4A3628;
+} 
+
+.etk:hover .cerceveE img{
+	transform: scale(1.05);
+}
+
+.etk:hover{
+	transform: translateY(-6px);
+}

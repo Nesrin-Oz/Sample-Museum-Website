@@ -1,0 +1,141 @@
+body{
+	overflow-x: hidden;
+	position: relative;
+}
+
+.ortaKisim{
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	text-align: center;
+	overflow: hidden;
+	background-color: #F5F1EC;
+}
+
+.hakkindaBaslik{
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.hakkindaBaslik h1{
+  font-size: 2.6rem;
+  color: #3b2417;
+  margin-bottom: 10px;
+}
+
+.hakkindaBaslik p{
+  font-size: 1.1rem;
+  color: #967e68;
+}
+
+.kapsayici{
+	width: 100%;
+	height: 310px;
+	position: relative;
+    margin-bottom: 120px;
+}
+
+.kart {
+  	width:90%;
+  	height: 310px;
+  	overflow: hidden;
+	margin: 0 auto;
+	background-color: #8c5a3c;
+  	box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+	transition: transform 0.4s ease;
+}
+
+
+.icerikH{
+	width: 100%;
+	height: 100%;
+	transition: left 0.5s ease,
+				right 0.5s ease,
+				transform 0.5s ease;
+	/* box-sizing: border-box; Padding, - 50%’nin içine dahil 
+										- Taşma olmaz 
+										- Layout bozulmaz*/
+}
+
+.hIcerik{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: right;
+}
+
+.solH {
+  	width: 60%;
+  	height: 100%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.solH p{
+	width: 80%;
+	color:#ddd1ca;
+	font-size: 17px;
+}
+
+.bilgiH {
+	width: 40%;
+  	height: 100%;	
+	background-color: #e6d3b1;
+}
+
+
+.cerceveE{
+  	width: 100%;
+  	height: 100%;
+	object-fit: cover;
+	object-position: center;
+  	box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+	overflow: hidden;
+	margin: 0 auto; 
+}
+
+.cerceveE img{
+	width: 100%;
+	height: 100%;
+  	object-fit: cover;/*Resim kare değilse bile köşeleri kırparak kare yapar*/ 
+	transition: transform 0.4s ease;
+}
+
+.cerceveE:hover img{
+	transform: scale(1.05);
+}
+
+
+.yanKart{
+	width: 100%;
+	height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-bottom: 50px;
+}
+
+.yanKutu{
+    width: 80%;
+	height: 100%;
+    font-size: 17px;
+    color: #4A3628;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.yanKutu p{
+	font-size: 17px;
+}
+
+.yanKutu h4{
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3E2A1C;
+}
+
+

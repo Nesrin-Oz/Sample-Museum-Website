@@ -1,0 +1,207 @@
+body{
+	background-image: url("muzeHaftasi.png");
+  	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.ortaKisim{
+	width: 100%;
+}
+
+.girisBolumu{
+    width:100%;
+    padding:120px 10%;
+    background:#EFE7DD;
+    text-align:center;
+}
+
+
+.icKisimE{
+    width: 100%;
+}
+
+.ustKisim{
+    width: 100%;
+    background-color: #F5F1EC;
+	padding-top: 50px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.icerikE{
+	width: 95%;
+	text-align: center;
+	border: 2px solid #D6C7B8;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+	background-color: #F8F5F2;
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.metinE{
+	width: 100%;
+	line-height: 1.7;
+	padding-left: 10px;
+	margin-right: 10px;
+}
+
+.metinE p{
+	text-align: left;
+	padding-left: 10px;
+}
+
+.bilgiListe{
+	list-style: none;
+}
+
+.bilgiListe li{
+	text-align: left;
+}
+
+.bilgiListe span{
+	display: inline-block;
+	width: auto;
+	font-weight: 500;
+	color: #6B4F3A;
+}
+
+.ortaBosluk{
+	width: 100%;
+	height: 200px;
+	background-color: #ffffff23;
+}
+
+.altKisim{
+	width: 100%;
+    background-color: #F5F1EC;
+	padding-bottom: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.kartlarE{
+	width: 95%;
+	margin: 60px auto;
+	border: 2px solid #D6C7B8;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+	background-color: #F8F5F2;
+	border-radius: 14px;
+	display: flex;
+	flex-direction: column;
+	align-items:self-start;
+}
+
+.kartlarE h2 a{
+	text-decoration: none;
+	color:#4A3628;
+	margin-left: 90px;
+	font-size: 35px;
+	transition: color 0.3s ease;
+}
+
+.kartlarE h2 a:hover{
+	color:#C9A24D;
+}
+
+.esatir{
+	width: 90%;
+	margin: 0 auto;
+	display:flex;
+	text-align: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+
+
+.etk{
+	width: 25%;
+	height: 300px;
+	background-color: #FFFFFF;
+	border: 1px solid #E0D6CC;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+	border-radius: 4px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+	display: inline-block;
+	transition: 0.3s ease;
+	position: relative;
+	margin-left: 20px;
+}
+
+.etiket{
+	width: 80px;
+	position: absolute;
+	top: 20px;
+	left: 5px;
+	background-color: #8C6A3F;
+	color: #FFFFFF;
+	border-radius: 5px;
+	transition: background-color 0.3s ease,
+				color 0.3s ease;
+}
+
+.cerceveE{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.cerceveE img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;  
+	transition: transform 0.4s ease;
+}
+
+.icerik{
+	width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content:center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.metinSol{
+	width: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #4F5B5C;
+	transition: color 0.3s ease;
+}
+
+
+.etk:hover{
+	background-color: #F5F1EC;
+}
+
+.etk:hover .metinSol{
+	color: #4A3628;
+}
+
+.etk:hover .etiket{
+	background-color: #C9A24D;
+	color: #4A3628;
+
+} 
+
+.etk:hover .cerceveE img{
+	transform: scale(1.05);
+}
+
+.etk:hover{
+	transform: translateY(-6px);
+}
+/* CSS Document */
+
+

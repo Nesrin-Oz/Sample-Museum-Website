@@ -1,0 +1,157 @@
+body{
+	overflow-x: hidden;
+}
+
+.ortaKisim{
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	text-align: center;
+	overflow: hidden;
+}
+
+
+.kapsayici{
+	width: 100%;
+	height: 310px;
+	position: relative;
+    margin-bottom: 120px;
+}
+
+.kart {
+  	width:90%;
+  	height: 310px;
+  	overflow: hidden;
+	margin: 0 auto;
+	background-color: #8c5a3c;
+  	box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+	transition: transform 0.4s ease;
+}
+
+.hSag{
+	margin-left: auto;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.icerikH{
+	width: 100%;
+	height: 100%;
+	transition: left 0.5s ease,
+				right 0.5s ease,
+				transform 0.5s ease;
+	/* box-sizing: border-box; Padding, - 50%’nin içine dahil 
+										- Taşma olmaz 
+										- Layout bozulmaz*/
+}
+
+.hIcerik{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: right;
+}
+
+.solH {
+  	width: 60%;
+  	height: 100%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.solH p{
+	width: 80%;
+	color:#ddd1ca;
+	font-size: 17px;
+}
+
+.bilgiH {
+	width: 40%;
+  	height: 100%;	
+	background-color: #e6d3b1;
+}
+
+.baslikResim h3{
+	height: 40px;
+}
+
+.baslikResim h3 a{
+	font-size: 1.4rem;
+	color:#380304;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #C9A24D;
+    display: inline-block;
+    padding-bottom: 6px;
+	text-decoration: none;
+	transition: color 0.4s ease,
+				border-color 0.4s ease,
+				font-size 0.4s ease;
+}
+
+.baslikResim h3 a:hover{
+	color:#C9A24D;
+	border-color: #380304;
+	font-size: 1.6rem;
+}
+
+
+.girisBolumu{
+    width:100%;
+    background-color: #E4DACC;
+    padding:120px 10%;
+    text-align:center;
+	overflow: hidden;
+}
+
+
+
+.baslikResim{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.cerceveE{
+  	width: 370px;
+  	height: 200px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 4px;
+  	box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+	overflow: hidden;
+	margin: 0 auto; 
+	margin-top: 10px;
+}
+
+.cerceveE img{
+	width: 100%;
+	height: 100%;
+  	object-fit: cover;/*Resim kare değilse bile köşeleri kırparak kare yapar*/  
+	transition: transform 0.4s ease;
+}
+
+.cerceveE:hover img{
+	transform: scale(1.05);
+}
+
+
+.yanKart{
+	width: 100%;
+	height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-bottom: 50px;
+}
+
+.yanKutu{
+    width: 80%;
+	height: 100%;
+    font-size: 16px;
+    color: #4A3628;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
